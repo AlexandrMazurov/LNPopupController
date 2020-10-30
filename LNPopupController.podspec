@@ -11,8 +11,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "LNPopupController/LNPopupController/**/*.{h,m}", "LNPopupController/LNPopupController.h"
   spec.public_header_files = "LNPopupController/LNPopupController/*.h", "LNPopupController/LNPopupController.h"
   spec.framework = "Foundation", "UIKit", "QuartzCore"
-  spec.target.xcconfig = "CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF": "NO", "CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS": "NO"
-
+  spec.requires_arc = true
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
