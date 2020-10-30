@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LNPopupController"
-  spec.version      = "0.0.1"
+  spec.version      = "3.0.0"
   spec.summary      = "A short description of LNPopupController."
 
   # This description is used to generate tags and improve search results.
