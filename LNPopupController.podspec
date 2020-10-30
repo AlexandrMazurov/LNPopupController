@@ -8,10 +8,10 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Aliaksandr Mazurau" => "aliaksandr.mazurau@yellow.systems" }
   spec.source       = { :git => "https://github.com/AlexandrMazurov/LNPopupController.git", :tag => "3.0.0" }
-  spec.source_files  = "LNPopupController/LNPopupController/**/*.{h,m}"
-  spec.exclude_files = "NPopupController/LNPopupController.h"
-  spec.public_header_files = "LNPopupController/LNPopupController/*.h"
-
+  spec.source_files  = "LNPopupController/LNPopupController/**/*.{h,m}", "LNPopupController/LNPopupController.h"
+  spec.public_header_files = "LNPopupController/LNPopupController/*.h", "LNPopupController/LNPopupController.h"
+  spec.framework = "Foundation", "UIKit", "QuartzCore"
+  spec.target.xcconfig = "CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF": "NO", "CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS": "NO"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
