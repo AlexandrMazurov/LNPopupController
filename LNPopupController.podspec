@@ -1,41 +1,54 @@
-{
-  "name": "LNPopupController",
-  "version": "2.10.22",
-  "homepage": "https://github.com/LeoNatan/LNPopupController",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
-  "authors": {
-    "Leo Natan": "lnatan@wix.com"
-  },
-  "description": "LNPopupController is a framework for presenting view controllers as popups of other view controllers, much like the Apple Music and Podcasts apps.",
-  "summary": "Framework for presenting view controllers in a popup style",
-  "screenshots": [],
-  "source": {
-    "git": "https://github.com/AlexandrMazurov/LNPopupController.git",
-    "tag": "3.0.0"
-  },
-  "source_files": [
-    "LNPopupController/LNPopupController/**/*.{h,m}",
-    "LNPopupController/LNPopupController.h"
-  ],
-  "public_header_files": [
-    "LNPopupController/LNPopupController/*.h",
-    "LNPopupController/LNPopupController.h"
-  ],
-  "private_header_files": "LNPopupController/LNPopupController/Private/*.h",
-  "frameworks": [
-    "Foundation",
-    "UIKit",
-    "QuartzCore"
-  ],
-  "pod_target_xcconfig": {
-    "CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF": "NO",
-    "CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS": "NO"
-  },
-  "requires_arc": true,
-  "platforms": {
-    "ios": "11.0"
-  }
-}
+#
+Pod::Spec.new do |spec|
+  spec.name         = "LNPopupController"
+  spec.version      = "0.0.1"
+  spec.summary      = "A short description of LNPopupController."
+  spec.description  = "LNPopupController is a framework for presenting view controllers as popups of other view controllers, much like the Apple Music and Podcasts apps."
+  spec.homepage     = "https://github.com/LeoNatan/LNPopupController"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author       = { "Aliaksandr Mazurau" => "aliaksandr.mazurau@yellow.systems" }
+  spec.source       = { :git => "https://github.com/AlexandrMazurov/LNPopupController.git", :tag => "3.0.0" }
+  spec.source_files  = "LNPopupController/LNPopupController/**/*.{h,m}"
+  spec.exclude_files = "NPopupController/LNPopupController.h"
+  spec.public_header_files = "LNPopupController/LNPopupController/*.h"
+
+
+  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  A list of resources included with the Pod. These are copied into the
+  #  target bundle with a build phase script. Anything else will be cleaned.
+  #  You can preserve files from being cleaned, please don't preserve
+  #  non-essential files like tests, examples and documentation.
+  #
+
+  # spec.resource  = "icon.png"
+  # spec.resources = "Resources/*.png"
+
+  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
+
+
+  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Link your library with frameworks, or libraries. Libraries do not include
+  #  the lib prefix of their name.
+  #
+
+  # spec.framework  = "SomeFramework"
+  # spec.frameworks = "SomeFramework", "AnotherFramework"
+
+  # spec.library   = "iconv"
+  # spec.libraries = "iconv", "xml2"
+
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If your library depends on compiler flags you can set them in the xcconfig hash
+  #  where they will only apply to your library. If you depend on other Podspecs
+  #  you can include multiple dependencies to ensure it works.
+
+  # spec.requires_arc = true
+
+  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # spec.dependency "JSONKit", "~> 1.4"
+
+end
